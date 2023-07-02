@@ -1,0 +1,136 @@
+.tile{
+    border-radius: var(--marketplace-border-radius);
+    box-shadow: var(--marketplace-box-shadow);
+    width: 400px;
+    height: 400px;
+    position:relative;
+    background-color: var( --marketplace-whitegrey);
+}
+
+.tile_icon{
+    width: 40px;
+}
+
+.tile_like{
+    position: absolute;
+    z-index: 10px;
+    border-radius: var(--marketplace-border-radius);
+    font-size: var(--marketplace-font-size-large);
+    top: 10px;
+    right: 10px;
+    padding: 3px;
+    background-color: white;
+    line-height: 21px;
+    cursor: pointer;
+    text-shadow: 0 0 2px #000;
+    color: white;
+}
+
+.tile_image{
+    width: 400px;
+    height: 170px!important; 
+    border-radius: var(--marketplace-border-radius) var(--marketplace-border-radius) 0 0;
+}
+
+.tile_div{
+    padding: 0 10px;
+}
+
+.tile_title_div{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: var(--marketplace-font-size-large);
+    margin: 5px 0;
+}
+
+.tile_price{
+    min-width: 25%;
+    text-align: right;
+}
+
+.tile_bottom_row{
+    border-top: 1px solid #d4d4d4;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    left: 10px;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.tile_button{
+    background-color: var(--marketplace-yellow);
+    padding: var(--marketplace-button-padding);
+    border-radius: var(--marketplace-border-radius);
+    box-shadow: var(--marketplace-box-shadow);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border:unset;
+    font-size: var(--marketplace-font-size-medium);
+    cursor: pointer;
+
+}
+
+.tile_shopping{
+    background-color: var(--marketplace-nightblue);
+    color: var(--marketplace-yellow);
+    padding: 6px;
+    line-height: 18px;
+    font-size: var(--marketplace-font-size-large);
+    border-radius: var(--marketplace-border-radius);
+    cursor: pointer;
+}
+
+.tile_description{
+    margin: unset;
+    font-size: var(--marketplace-font-size-small);
+    line-height: 15px;
+}
+
+.tile_like.isFavorite{
+    color: var(--marketplace-yellow);
+    background-color: var(--marketplace-nightblue);
+}
+
+
+.tile_extra{
+    position: absolute;
+    z-index: 10px;
+    border-radius: var(--marketplace-border-radius);
+    font-size: var(--marketplace-font-size-medium);
+    top: 10px;
+    left: 10px;
+    padding: 1px 18px;
+    font-weight: 800;
+    text-align: center;
+    background: var(--marketplace-yellow);
+    box-shadow: var(--marketplace-box-shadow);
+    
+}
+
+.tile_rating_div{
+    align-items: center;
+    display: flex;
+    gap:3px;
+}
+.tile_rating_count{
+    min-width: 30px;
+    font-size: var(--marketplace-font-size-small);
+}
+
+
+@media screen and (max-width: 1400px){
+    .tile_image{
+        width: 350px;
+    }
+    .tile{
+        width: 350px;
+    }
+}
+

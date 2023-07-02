@@ -1,0 +1,73 @@
+:root{
+    /* Colors */
+    --marketplace-lightblue: rgb(27,187,233);
+    --marketplace-darkblue: rgb(0,65,113);
+    
+    --marketplace-yellow: rgb(255,229,0);
+    --marketplace-nightblue: rgb(0,46,61);
+    --marketplace-green: rgb(122,181,29);
+    
+    --marketplace-darkgrey: rgb(56,60,69);;
+    --marketplace-midgrey: rgb(155,157,162);;
+    --marketplace-lightgrey: rgb(205,206,208);
+    --marketplace-whitegrey: rgb(245,245,246);
+
+
+    
+    /* Font Size */
+    --marketplace-font-size-xlarge: 22px;
+    --marketplace-font-size-large: 18px;
+    --marketplace-font-size-medium: 15px;
+    --marketplace-font-size-small: 13px;
+    
+
+    /* Buttons */
+    --marketplace-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    --marketplace-button-padding: 6px 18px;
+    --marketplace-border-radius: 8px;
+    --marketplace-opacity: 70%;
+}
+
+
+
+
+.app *{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: content-box;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.app{
+    margin: 80px auto;
+    width: 1350px!important;
+}
+
+
+
+.filter_flex{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 17px;
+}
+@media screen and (max-width: 1200px) {
+    .app{
+       width: 800px!important;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .desktop_only{
+        display:none;
+    }
+    .app{
+        width:unset!important;
+    }
+    .filter_flex{
+        padding: 20px 0;
+    }
+}

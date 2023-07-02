@@ -1,0 +1,15 @@
+.sliderContentGroup{
+    padding: 10px 30px;
+}
+
+.sliderContentGroupTitle{
+    font-size: var(--marketplace-font-size-large);
+    font-weight: 600;
+    margin:  5px 0;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+

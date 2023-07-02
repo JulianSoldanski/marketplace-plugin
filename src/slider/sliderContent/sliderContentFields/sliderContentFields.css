@@ -1,0 +1,65 @@
+
+.sliderContentGroupEntry{
+    padding: 4px 2px;
+    font-size: var(--marketplace-font-size-medium);
+
+}
+
+.sliderContentRadiobox{
+    padding:  var(--marketplace-button-padding);
+    background-color: var(--marketplace-whitegrey);
+    border-radius: var(--marketplace-border-radius);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: unset;
+    font-size: var(--marketplace-font-size-medium);
+    cursor: pointer;
+    text-align: center;
+}
+
+.sliderContentGroupEntry input[type="radio"]{
+    display: none;
+}
+
+input:checked + .sliderContentRadiobox{
+    background-color: var(--marketplace-darkblue);
+    color: white;
+}
+
+/*-- Overriding Slider Color https://mui.com/material-ui/customization/how-to-customize/ --*/
+.sliderContentGroup .css-7drnjp{
+    background-color: var(--marketplace-darkblue);
+} 
+
+.sliderContentGroup .css-1t2bqnt{
+    background-color: var(--marketplace-lightblue);
+}
+.sliderContentGroup .css-exkjcx{
+    color: var(--marketplace-lightblue);
+
+}
+
+.sliderContentGroup .css-1nr2wod.Mui-checked{
+    color: var(--marketplace-darkblue);
+}
+
+.sliderContentGroup .css-1nr2wod.Mui-checked + .MuiSwitch-track{
+    background-color: var(--marketplace-lightblue);
+}
+
+.sliderContentGroup .css-zun73v.Mui-checked{
+    color: var(--marketplace-darkblue);
+
+}
+
+/*-- Overriding finished --*/
+
+
+.sliderContentSwitchFlex{
+    display: flex;
+    justify-content: left;
+    padding: 0px 17px;
+    align-items: center;
+
+}
